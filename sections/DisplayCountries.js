@@ -7,12 +7,10 @@ function displayCountries() {
 
       data.forEach((country) => {
         const flag = getFlagIcon(country.altSpellings[0]);
-        // console.log(flag);
         const name = country.name.common;
         const capital = country.capital[0];
         const population = getPopulationNumber(country.population);
         const currency = getCurrency(country.currencies);
-        // console.log(currency);
 
         countryContainer.innerHTML += `
         <div class="country-wrapper">
